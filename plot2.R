@@ -6,7 +6,7 @@ zipfile <- "household_power_consumption.zip"
 download.file(fileurl, destfile=zipfile, method="auto")
 
 # unzip the data file
-unzipfile <- unzip("household_power_consumption.zip")
+unzipfile <- unzip(zipfile)
 
 library(data.table)
 
